@@ -1,0 +1,22 @@
+2023-11-26 02:16:18:1700982978500 | INFO  | Process Limits
+	 Virual Memory -> no limit
+	 Time Limit -> no limit
+	 Stack Size -> no limit
+	 Data Segment -> no limit
+	 File Size -> no limit
+	 Lock Limit -> no limit
+	 CPU Time Limit -> no limit
+	 RSS  -> no limit
+	 Threads  -> 4096 
+Available Cores : 4
+
+2023-11-26 02:16:18:1700982978500 | INFO  | Share License key => -2589564791301854274 for master run  Old Key => -2589564791301854274
+2023-11-26 02:16:23:1700982983318 | INFO  | registerSyncPoint: check_cdc cmdPtr: 0x2ba96000
+2023-11-26 02:16:23:1700982983318 | INFO  | registerSyncPoint: check_glitch cmdPtr: 0x2ba9c000
+2023-11-26 02:16:23:1700982983318 | INFO  | registerSyncPoint: check_rdc cmdPtr: 0x12423980
+2023-11-26 02:16:23:1700982983318 | INFO  | registerSyncPoint: finish_distributed_run cmdPtr: 0x2b951c00
+2023-11-26 02:16:23:1700982983318 | INFO  | registerSyncPoint: write_abstract_model cmdPtr: 0x2c2d6800
+2023-11-26 02:16:23:1700982983318 | INFO  | registerSyncPoint: write_constr_abstract_model cmdPtr: 0x2bac4000
+2023-11-26 02:16:24:1700982984361 | INFO  | restoreDesignForChildModes child: 0  designShare: 0 isDesignReadProcess: 0 designExists:0
+2023-11-26 02:16:24:1700982984361 | INFO  | .. don't restore design
+2023-11-26 02:16:25:1700982985660 | INFO  | saveDesignForChildModes: MM not enabled

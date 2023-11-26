@@ -1,0 +1,17 @@
+#######################################################################################
+# fsdb.xxxxx.log : log primitive debug message of FSDB Reader
+# This is for R&D to analyze when there are issues happening when FSDB reading
+# The corresponding FSDB file is /home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/vcst_rtdb/.internal/verdi/evaluate_result.fsdb
+#######################################################################################
+[BASIC]Reader version : unknown
+[BASIC]simulator version : unknown
+[BASIC]dumper version : unspecified
+[THREAD]The MTR thread count is 2
+[READSCOPE]ReadScopeTree calling time is 2
+[READSCOPE]ReadScope_PartialLoad calling time is 0
+[READSCOPE]Scope read by partial load count is 0
+[READSCOPE]Scope read count is 4
+[READSCOPE]Decompressed blk is 1
+[FSDBGate Info] start
+[FSDBGate Info] Total fhdb_compute_count = 0
+[FSDBGate Info] end

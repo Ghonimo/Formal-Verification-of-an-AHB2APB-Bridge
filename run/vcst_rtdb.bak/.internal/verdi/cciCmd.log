@@ -1,0 +1,10 @@
+02:15:05 : gui:localhost.ghonim:36368
+02:15:05 : ___vcstRenameMan
+02:15:07 : ___vcDumpDefMsgColor
+02:15:07 : ___vcChangeMsgColor msg_color_warn magenta
+02:15:07 : ___vcChangeMsgColor msg_color_info black
+02:15:07 : MasterSourceFile fpv_run_apb_controller.tcl
+02:15:09 : ___fvSavePropDBToStream
+02:15:09 : ___fvSavePropDBToStream
+02:15:09 : ___vcDisplayAbstractSrcFromAutoBBox
+02:16:15 : terminate

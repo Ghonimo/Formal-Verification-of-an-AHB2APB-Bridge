@@ -1,0 +1,10 @@
+# Master Broadcast File
+time 1700982991
+pid 2488
+log /home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/vcst_rtdb/.internal/formal/fpId0/tw/run_tw_session/log.cdpl/master.localhost.ghonim.2488.log.gz
+tcp 10.0.2.15:34744
+wlog /dev/null
+wlog /dev/null
+wlog /dev/null
+wlog /dev/null
+status done

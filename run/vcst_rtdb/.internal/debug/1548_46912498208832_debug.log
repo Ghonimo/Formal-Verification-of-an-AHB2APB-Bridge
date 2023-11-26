@@ -1,0 +1,140 @@
+(2023-11-26 02:16:17),0.0138354,0,start,1443.92,398,LicenseMgr Init : 
+(2023-11-26 02:16:18),0.0233585,0,end,1449.19,398,LicenseMgr Init : 
+(2023-11-26 02:16:24),0.12633,0,start,1522.66,435,VCS Read Task : 
+(2023-11-26 02:16:25),0.146486,0,end,1522.66,435,VCS Read Task : 
+(2023-11-26 02:16:25),0.146865,0,start,1522.66,435,Load VCS Message: 
+(2023-11-26 02:16:25),0.14687,0,end,1522.66,435,Load VCS Message: 
+(2023-11-26 02:16:25),0.146871,0,start,1522.66,435,NLDM Creation : 
+(2023-11-26 02:16:25),0.146923,0,start,1522.66,435,LoadCircuitModel : 
+(2023-11-26 02:16:25),0.147134,0,start,1522.66,435,VsiLib_Restore : 
+(2023-11-26 02:16:25),0.147136,0,end,1522.66,435,VsiLib_Restore : 
+(2023-11-26 02:16:25),0.147136,0,end,1522.66,435,LoadCircuitModel : 
+(2023-11-26 02:16:25),0.147138,0,start,1522.66,435,BuildNetlist : 
+(2023-11-26 02:16:25),0.147245,0,start,1522.66,435,NLDM Build : 
+(2023-11-26 02:16:25),0.147393,0,end,1537.7,451,NLDM Build : 
+(2023-11-26 02:16:25),0.147398,1,start,1537.7,451,Cell properties : 
+(2023-11-26 02:16:25),0.147452,1,end,1537.71,451,Cell properties : 
+(2023-11-26 02:16:25),0.147453,0,end,1537.71,451,BuildNetlist : 
+(2023-11-26 02:16:25),0.147455,0,end,1537.71,451,NLDM Creation : 
+(2023-11-26 02:16:25),0.147507,0,start,1537.71,452,PropertyLoad: Formal Property : 
+(2023-11-26 02:16:25),0.147583,0,end,1537.71,452,PropertyLoad: Formal Property : 
+(2023-11-26 02:16:25),0.1476,0,start,1537.71,452,PropertyLoad: Formal Property : 
+(2023-11-26 02:16:25),0.147601,0,end,1537.71,452,PropertyLoad: Formal Property : 
+(2023-11-26 02:16:25),0.147602,0,start,1537.71,452,PropertyLoad: Formal Property : 
+(2023-11-26 02:16:25),0.147603,0,end,1537.71,452,PropertyLoad: Formal Property : 
+(2023-11-26 02:16:25),0.147613,0,start,1537.71,452,StaticCheck: StaticCheckProcess : 
+(2023-11-26 02:16:25),0.147615,0,start,1537.71,452,StaticCheck: NldfgFlatDesign : 
+(2023-11-26 02:16:25),0.147617,0,start,1537.71,452,StaticCheck: createFlatDesign : 
+(2023-11-26 02:16:25),0.14766,0,end,1545.72,461,StaticCheck: createFlatDesign : 
+(2023-11-26 02:16:25),0.147661,0,start,1545.72,461,StaticCheck: legalize : 
+(2023-11-26 02:16:25),0.147663,0,end,1545.72,461,StaticCheck: legalize : 
+(2023-11-26 02:16:25),0.147664,0,start,1545.72,461,StaticCheck: computeNetEquivalences : 
+(2023-11-26 02:16:25),0.147665,0,end,1545.72,461,StaticCheck: computeNetEquivalences : 
+(2023-11-26 02:16:25),0.147666,0,start,1545.72,461,StaticCheck: eliminateBidirectionals : 
+(2023-11-26 02:16:25),0.147667,0,end,1545.72,461,StaticCheck: eliminateBidirectionals : 
+(2023-11-26 02:16:25),0.147668,0,end,1545.72,461,StaticCheck: NldfgFlatDesign : 
+(2023-11-26 02:16:25),0.147669,0,start,1545.72,461,StaticCheck: CombLoopCheck  : 
+(2023-11-26 02:16:25),0.147674,0,end,1545.72,461,StaticCheck: CombLoopCheck  : 
+(2023-11-26 02:16:25),0.147675,0,start,1545.72,461,StaticCheck: MultiDriverCheck  : 
+(2023-11-26 02:16:25),0.147677,0,end,1545.72,461,StaticCheck: MultiDriverCheck  : 
+(2023-11-26 02:16:25),0.147679,0,end,1545.72,452,StaticCheck: StaticCheckProcess : 
+(2023-11-26 02:16:25),0.147809,0,start,1545.72,452,populate SSF data: 
+(2023-11-26 02:16:25),0.14781,0,end,1545.72,452,populate SSF data: 
+(2023-11-26 02:16:25),0.147811,0,start,1545.72,452,DumpGateCountStats : 
+(2023-11-26 02:16:25),0.147816,0,end,1545.72,452,DumpGateCountStats : 
+(2023-11-26 02:16:25),0.147886,1,start,1545.72,461,ModuleDesignPropagation : 
+(2023-11-26 02:16:25),0.14789,1,end,1545.72,461,ModuleDesignPropagation : 
+(2023-11-26 02:16:25),0.150018,0,start,1546.81,463,sim build substep: 
+(2023-11-26 02:16:25),0.150242,0,end,1554.64,471,sim build substep: 
+(2023-11-26 02:16:25),0.150245,0,start,1554.64,471,sim run substep: 
+(2023-11-26 02:16:25),0.150402,0,end,1558.54,475,sim run substep: 
+(2023-11-26 02:16:25),0.150409,0,start,1558.6,475,sim_save_reset : 
+(2023-11-26 02:16:25),0.150865,0,end,1568.27,463,sim_save_reset : 
+(2023-11-26 02:16:28),0.195256,0,start,1568.27,463,Check: check_fv : 
+(2023-11-26 02:16:28),0.195397,0,start,1568.27,463,Check: BuildFormal : 
+(2023-11-26 02:16:28),0.195431,0,start,1568.27,463,Check: Init : 
+(2023-11-26 02:16:28),0.195434,0,end,1568.27,463,Check: Init : 
+(2023-11-26 02:16:28),0.195437,0,start,1568.27,463,Check: ResetSetup : 
+(2023-11-26 02:16:28),0.195438,0,start,1568.27,463,Check: EnvInstrumentation : 
+(2023-11-26 02:16:28),0.195439,0,end,1568.27,463,Check: EnvInstrumentation : 
+(2023-11-26 02:16:28),0.195442,0,end,1568.27,463,Check: ResetSetup : 
+(2023-11-26 02:16:28),0.195443,0,start,1568.27,463,Check: BotEotInstr : 
+(2023-11-26 02:16:28),0.195444,0,end,1568.27,463,Check: BotEotInstr : 
+(2023-11-26 02:16:28),0.195445,0,start,1568.27,463,Check: VPSetup : 
+(2023-11-26 02:16:28),0.195447,0,end,1568.27,463,Check: VPSetup : 
+(2023-11-26 02:16:28),0.195448,0,start,1568.27,463,Check: VPReset : 
+(2023-11-26 02:16:28),0.195456,0,end,1568.27,463,Check: VPReset : 
+(2023-11-26 02:16:28),0.195457,0,start,1568.27,463,Check: InitApp : 
+(2023-11-26 02:16:28),0.195474,0,end,1568.27,463,Check: InitApp : 
+(2023-11-26 02:16:28),0.195475,0,start,1568.27,463,Check: FormalModel : 
+(2023-11-26 02:16:28),0.195476,0,start,1568.27,463,DfgBuild: Setup : 
+(2023-11-26 02:16:28),0.195477,0,start,1568.27,463,DfgBuild: ValidateNLDMOperators : 
+(2023-11-26 02:16:28),0.19548,0,end,1568.27,463,DfgBuild: ValidateNLDMOperators : 
+(2023-11-26 02:16:28),0.195481,0,end,1568.27,463,DfgBuild: Setup : 
+(2023-11-26 02:16:28),0.195482,0,start,1568.27,463,DfgBuild: ReuseCheck : 
+(2023-11-26 02:16:28),0.195483,0,end,1568.27,463,DfgBuild: ReuseCheck : 
+(2023-11-26 02:16:28),0.195484,0,start,1568.27,463,DfgBuild: Flatten : 
+(2023-11-26 02:16:28),0.195513,0,end,1568.27,472,DfgBuild: Flatten : 
+(2023-11-26 02:16:28),0.195514,0,start,1568.27,472,DfgBuild: ClockSetup : 
+(2023-11-26 02:16:28),0.195516,0,end,1568.27,472,DfgBuild: ClockSetup : 
+(2023-11-26 02:16:28),0.195516,0,start,1568.27,472,DfgBuild: Modeling : 
+(2023-11-26 02:16:28),0.19552,0,end,1568.27,472,DfgBuild: Modeling : 
+(2023-11-26 02:16:28),0.195521,0,start,1568.27,472,DfgBuild: FlatRemodel : 
+(2023-11-26 02:16:28),0.195611,0,end,1568.27,472,DfgBuild: FlatRemodel : 
+(2023-11-26 02:16:28),0.195613,0,start,1568.27,472,DfgBuild: NldfgBuild : 
+(2023-11-26 02:16:28),0.195615,0,start,1568.27,472,NldfgBuild : Print statistics 
+(2023-11-26 02:16:28),0.195616,0,end,1568.27,472,NldfgBuild : Print statistics 
+(2023-11-26 02:16:28),0.195617,0,start,1568.27,472,NldfgBuild : Cutpoint Insertion 
+(2023-11-26 02:16:28),0.195678,0,end,1568.27,472,NldfgBuild : Cutpoint Insertion 
+(2023-11-26 02:16:28),0.19568,0,start,1568.27,472,NldfgBuild : Compute net equivalences 
+(2023-11-26 02:16:28),0.195681,0,end,1568.27,472,NldfgBuild : Compute net equivalences 
+(2023-11-26 02:16:28),0.195682,0,start,1568.27,472,NldfgBuild : Eliminate bidirectionals 
+(2023-11-26 02:16:28),0.195683,0,end,1568.27,472,NldfgBuild : Eliminate bidirectionals 
+(2023-11-26 02:16:28),0.195684,0,start,1568.27,472,NldfgBuild : Remove false combo loops 
+(2023-11-26 02:16:28),0.195694,0,end,1568.27,472,NldfgBuild : Remove false combo loops 
+(2023-11-26 02:16:28),0.195707,0,start,1568.27,472,NldfgBuild : Create dfg 
+(2023-11-26 02:16:28),0.195708,0,start,1568.27,472,NldfgBuild : Create graph function 
+(2023-11-26 02:16:28),0.195709,0,end,1568.27,472,NldfgBuild : Create graph function 
+(2023-11-26 02:16:28),0.19571,0,start,1568.27,472,NldfgBuild : Create scopes 
+(2023-11-26 02:16:28),0.195711,0,end,1568.27,472,NldfgBuild : Create scopes 
+(2023-11-26 02:16:28),0.195713,0,start,1568.27,472,NldfgBuild : Initial setup 
+(2023-11-26 02:16:28),0.195727,0,end,1568.27,473,NldfgBuild : Initial setup 
+(2023-11-26 02:16:28),0.195727,0,start,1568.27,473,NldfgBuild : Create graph 
+(2023-11-26 02:16:28),0.195735,0,end,1568.27,473,NldfgBuild : Create graph 
+(2023-11-26 02:16:28),0.195735,0,start,1568.27,473,NldfgBuild : Create terminal sinks and sources 
+(2023-11-26 02:16:28),0.195755,0,end,1568.27,473,NldfgBuild : Create terminal sinks and sources 
+(2023-11-26 02:16:28),0.195757,0,start,1568.27,473,NldfgBuild : Compute dependencies 
+(2023-11-26 02:16:28),0.195759,0,end,1568.27,473,NldfgBuild : Compute dependencies 
+(2023-11-26 02:16:28),0.19576,0,start,1568.27,473,NldfgBuild : Compute combinational SCCs 
+(2023-11-26 02:16:28),0.195762,0,end,1568.27,473,NldfgBuild : Compute combinational SCCs 
+(2023-11-26 02:16:28),0.195763,0,start,1568.27,473,NldfgBuild : Compute templates 
+(2023-11-26 02:16:28),0.195822,0,end,1568.27,474,NldfgBuild : Compute templates 
+(2023-11-26 02:16:28),0.195823,0,start,1568.27,474,NldfgBuild : Eliminate combinational SCCs 
+(2023-11-26 02:16:28),0.195825,0,end,1568.27,474,NldfgBuild : Eliminate combinational SCCs 
+(2023-11-26 02:16:28),0.195827,0,start,1568.27,474,NldfgBuild : Computing sequential SCCs 
+(2023-11-26 02:16:28),0.195829,0,end,1568.27,474,NldfgBuild : Computing sequential SCCs 
+(2023-11-26 02:16:28),0.19583,0,start,1568.27,474,NldfgBuild : Create simulator clocks, changeAts and Triggers 
+(2023-11-26 02:16:28),0.195831,0,end,1568.27,474,NldfgBuild : Create simulator clocks, changeAts and Triggers 
+(2023-11-26 02:16:28),0.195831,0,start,1568.27,474,NldfgBuild : SymSimulator Analysis and computation 
+(2023-11-26 02:16:28),0.195937,0,end,1568.27,474,NldfgBuild : SymSimulator Analysis and computation 
+(2023-11-26 02:16:28),0.195943,0,end,1568.27,474,NldfgBuild : Create dfg 
+(2023-11-26 02:16:28),0.195945,0,end,1568.27,473,DfgBuild: NldfgBuild : 
+(2023-11-26 02:16:28),0.195946,0,start,1568.27,473,StaticCheck: StaticCheckProcess : 
+(2023-11-26 02:16:28),0.195947,0,start,1568.27,473,StaticCheck: NldfgFlatDesign : 
+(2023-11-26 02:16:28),0.195948,0,end,1568.27,473,StaticCheck: NldfgFlatDesign : 
+(2023-11-26 02:16:28),0.195949,0,start,1568.27,473,StaticCheck: CombLoopCheck  : 
+(2023-11-26 02:16:28),0.195955,0,end,1568.27,473,StaticCheck: CombLoopCheck  : 
+(2023-11-26 02:16:28),0.195956,0,start,1568.27,473,StaticCheck: MultiDriverCheck  : 
+(2023-11-26 02:16:28),0.195958,0,end,1568.27,473,StaticCheck: MultiDriverCheck  : 
+(2023-11-26 02:16:28),0.195959,0,end,1568.27,473,StaticCheck: StaticCheckProcess : 
+(2023-11-26 02:16:28),0.19596,0,start,1568.27,473,DfgBuild: DfgRemodel : 
+(2023-11-26 02:16:28),0.19611,0,end,1568.27,473,DfgBuild: DfgRemodel : 
+(2023-11-26 02:16:28),0.196113,0,end,1568.27,463,Check: FormalModel : 
+(2023-11-26 02:16:28),0.196114,0,end,1568.27,463,Check: BuildFormal : 
+(2023-11-26 02:16:28),0.196115,0,start,1568.27,463,Check: GCDB : 
+(2023-11-26 02:16:28),0.19613,0,end,1568.27,463,Check: GCDB : 
+(2023-11-26 02:16:28),0.196152,0,start,1568.27,463,Check: Tanglewood : 
+(2023-11-26 02:16:29),0.203773,0,end,1568.27,463,Check: Tanglewood : 
+(2023-11-26 02:16:29),0.203775,0,end,1568.27,463,Check: check_fv : 
+(2023-11-26 02:16:34),0.298635,0,start,1568.27,464,DfgBuild: saveProofDb_lastUpdate : 
+(2023-11-26 02:16:34),0.298659,0,end,1568.27,464,DfgBuild: saveProofDb_lastUpdate : 

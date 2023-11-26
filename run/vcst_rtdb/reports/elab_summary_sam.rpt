@@ -1,0 +1,18 @@
+Elaborated Name: 'APB_FSM_Controller'
+        ST_IDLE = 3'b0
+        ST_WWAIT = 3'b1
+        ST_READ = 3'b010
+        ST_WRITE = 3'b011
+        ST_WRITEP = 3'b100
+        ST_RENABLE = 3'b101
+        ST_WENABLE = 3'b110
+        ST_WENABLEP = 3'b111
+Elaborated Name: 'APB_FSM_Controller_sva'
+        ST_IDLE = 3'b0
+        ST_WWAIT = 3'b1
+        ST_READ = 3'b010
+        ST_WRITE = 3'b011
+        ST_WRITEP = 3'b100
+        ST_RENABLE = 3'b101
+        ST_WENABLE = 3'b110
+        ST_WENABLEP = 3'b111

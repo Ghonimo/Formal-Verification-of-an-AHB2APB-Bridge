@@ -1,0 +1,27 @@
+2023-11-26 02:15:05:1700982905432 | INFO  | Process Limits
+	 Virual Memory -> no limit
+	 Time Limit -> no limit
+	 Stack Size -> no limit
+	 Data Segment -> no limit
+	 File Size -> no limit
+	 Lock Limit -> no limit
+	 CPU Time Limit -> no limit
+	 RSS  -> no limit
+	 Threads  -> 4096 
+Available Cores : 4
+
+2023-11-26 02:15:05:1700982905432 | INFO  | Share License key => 6007163843460955698 for master run  Old Key => 6007163843460955698
+2023-11-26 02:15:06:1700982906720 | INFO  | registerSyncPoint: check_cdc cmdPtr: 0x2ba96000
+2023-11-26 02:15:06:1700982906720 | INFO  | registerSyncPoint: check_glitch cmdPtr: 0x2ba9c000
+2023-11-26 02:15:06:1700982906720 | INFO  | registerSyncPoint: check_rdc cmdPtr: 0x12423980
+2023-11-26 02:15:06:1700982906720 | INFO  | registerSyncPoint: finish_distributed_run cmdPtr: 0x2b951c00
+2023-11-26 02:15:06:1700982906720 | INFO  | registerSyncPoint: write_abstract_model cmdPtr: 0x2c2d6800
+2023-11-26 02:15:06:1700982906720 | INFO  | registerSyncPoint: write_constr_abstract_model cmdPtr: 0x2bac4000
+2023-11-26 02:15:07:1700982907862 | INFO  | restoreDesignForChildModes child: 0  designShare: 0 isDesignReadProcess: 0 designExists:0
+2023-11-26 02:15:07:1700982907862 | INFO  | .. don't restore design
+2023-11-26 02:15:09:1700982909036 | INFO  | saveDesignForChildModes: MM not enabled
+2023-11-26 02:15:09:1700982909091 | ERROR | handleTclCmd: read_file -top $design -format sverilog -sva \
+-aep all -vcs {../RTL/APB_Controller.v +define+INLINE_SVA \
+   ../sva/APB_FSM_Controller_sva.sv}
+ status: 1 insidesource: 1 sh_continue_on_error: false isChildMode: 0
+2023-11-26 02:15:09:1700982909091 | ERROR | handleTclCmd: source -echo -verbose fpv_run_apb_controller.tcl status: 1 insidesource: 0 sh_continue_on_error: false isChildMode: 0

@@ -1,0 +1,77 @@
+
+                                   VC Static 
+
+              Version U-2023.03-SP2-1 for linux64 - Oct 13, 2023 
+
+                    Copyright (c) 2010 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+restore_session -level default
+MasterSourceFile fpv_run_apb_controller.tcl
+# Select AEP as the VC Formal App mode
+set_fml_appmode FPV
+set design APB_FSM_Controller
+set_fml_var fml_aep_unique_name true
+read_file -top $design -format sverilog -sva \
+-aep all -vcs {../RTL/APB_Controller.v +define+INLINE_SVA \
+   ../sva/APB_FSM_Controller_sva.sv}
+Info: Invoking New SVA Compiler Instrument...
+Info: SVAC-NC Start
+Info: SVAC-NC Finished
+Info: Invoking Vlog AEP Instrument...
+Info: Vlog AEP Extraction Start
+Info: Vlog AEP Extraction Finished
+Info: Invoking Simon...
+Info: Simon VCS Start
+=======================================================
+VCS CPU Time(s)     :0.20
+SIMON CPU Time(s)   :0.17
+SIMON Total Time(s) :0.07
+Peak Memory(MB)     :402
+=======================================================
+Info: Simon VCS Finished
+Info: Simon call complete 
+Info: Exiting after Simon Analysis 
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+[Info] DB_COPT045: Vcs analyzer task has finished.
+[Info] PROP_I_COLLECT: Collecting Source Properties from the view:APB_FSM_Controller.
+[Info] PROP_I_COLLECT: Collecting Source Properties from the view:APB_FSM_Controller.
+# Gate Counts 
+Number of Flat Instances = 1141
+Number of Operator = 1141
+Number of Libcells = 0
+Number of Black-Box Instances = 0
+
+#read_waiver_file -elfiles aep.el
+# Creating clock and reset signals
+create_clock Hclk -period 100 
+create_reset Hresetn -sense low
+# Runing a reset simulation
+sim_run -stable 
+[Info] SIM_I_CREATE: Create Simulation Model.
+sim_save_reset
+
+action aaVerdiRestoreClipboard -trigger
+check_fv
+[Info] FORMAL_I_CREATE: Create Formal Model:APB_FSM_Controller.
+[Info] FORMAL_I_RUN: Starting formal verification for check_fv
+	  Id: 0  Goals: 40  Constraints: 0  Block Mode: false
+[Info] LIC_UNUSED_WORKERS: 8 unused worker(s) based 1 licenses needed to support 4 workers requested.
+	Use 'set_grid_usage' to maximize worker usage and improve performance, if there are sufficient compute resources to support more workers.
+	Each runtime license supports 12 workers.
+[Info] LIC_RT_CHECKOUT: VC Formal run time license checkout. Base:1  FPV:1.
+[Info] RETRIEVE_LEARN_DATA: Retrieved learned data from (local directory) APB_FSM_Controller_learn_dir to /home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/vcst_rtdb/.internal/formal/fpId0/retrieved_result.
+[Info] BITLEVEL_MODEL_STATS: Generated model with 217 gates, 3 inputs, 49 registers, 0 initial constraints, 0 constraints.
+[Info] BITLEVEL_MODEL_STATS: Generated model with 131 gates, 3 inputs, 41 registers, 0 initial constraints, 0 constraints.

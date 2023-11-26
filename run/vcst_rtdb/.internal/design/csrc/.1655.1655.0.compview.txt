@@ -1,0 +1,6 @@
+{"vcs1":{"timestamp_begin":1700982984.911607612, "rt":0.61, "ut":0.20, "st":0.18}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1700982984.448189159}
+{"VCS_COMP_START_TIME": 1700982984.448189159}
+{"VCS_COMP_END_TIME": 1700982985.562094393}
+{"VCS_USER_OPTIONS": "/home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/vcst_rtdb/.internal/design/undef_vcs.v -file /home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/vcst_rtdb/.internal/design/vcsCmd -Xvcstatic_extns=0x100 +warn=noSM_CCE -kdb=common_elab -Xufe=parallel:incrdump +warn=noKDB-ELAB-E +warn=noELW_UNBOUND -Xverdi_elab_opts=-saveLevel -verdi_opts -logdir /home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/vcst_rtdb/verdi/elabcomLog  -Xvd_opts=-silent,-ssy,-ssv,-ssz,+disable_message+C00373, -full64"}
+{"vcs1": {"peak_mem": 411668}}

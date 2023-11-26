@@ -1,0 +1,22 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run
+VCS_HOME=/home/ghonim/Synopsys/installed/vc_static/U-2023.03-SP2-1/vcs-mx
+VERDI_HOME=/home/ghonim/Synopsys/installed/vc_static/U-2023.03-SP2-1/verdi
+SystemC=FALSE
+UUM=FALSE
+KDB=TRUE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+ENV="SYNOPSYS_SIM_SETUP=/home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/vcst_rtdb/.internal/design/synopsys_sim.setup" 
+TOP=APB_FSM_Controller 
+ELAB=TRUE
+COMMON_ELAB=TRUE
+SIMV_WRAPPER=FALSE
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a
+
+[CompInfo]
+FLOW_OPTS=-kdb=common_elab 

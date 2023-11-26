@@ -1,0 +1,23 @@
+02:16:21 : gui:localhost.ghonim:39802
+02:16:21 : ___vcstRenameMan
+02:16:23 : ___vcDumpDefMsgColor
+02:16:23 : ___vcChangeMsgColor msg_color_warn magenta
+02:16:23 : ___vcChangeMsgColor msg_color_info black
+02:16:24 : MasterSourceFile fpv_run_apb_controller.tcl
+02:16:26 : ___fvSavePropDBToStream
+02:16:26 : get_blackbox -designs -verdi
+02:16:26 : get_glassbox -verdi
+02:16:26 : get_snips -verdi
+02:16:27 : ___fvWaitAnnotation
+02:16:27 : ___fvSetReuseWave
+02:16:27 : action aaVerdiRestoreClipboard -trigger
+02:16:27 : ___vcDisplayAbstractSrcFromAutoBBox
+02:16:27 : ___fvSavePropDBToStream
+02:16:27 : ___fvReportConstant {/home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/vcst_rtdb/.internal/verdi/constant.xml}
+02:16:28 : check_fv
+02:16:29 : ___fvReportGridUsage /home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/vcst_rtdb/.internal/verdi/gridUsage.xml1
+02:16:37 : ___fvGetTooltip {assert_state_transition: assert property (p_state_transition) }
+02:16:38 : ___fvGetTooltip {assert_state_transition: assert property (p_state_transition) }
+02:16:38 : ___fvGetTooltip {assert_state_transition: assert property (p_state_transition) }
+02:16:38 : ___fvGetTooltip {assert_state_transition: assert property (p_state_transition) }
+02:16:39 : ___fvGetTooltip {assert_WWAIT_to_WRITE: assert property (p_WWAIT_to_WRITE) }

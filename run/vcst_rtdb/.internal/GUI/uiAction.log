@@ -1,0 +1,23 @@
+action aaMonetActionReplayMode -trigger
+
+action aaMonetViewDone:0 -reset
+action aaMonetView:0 -guimode {1} -trigger
+waitfor aaMonetViewDone:0
+
+action aaMonetSetSyncScope:0 -set {0} -trigger
+action aaMonetAvClickedDone:0 -reset
+action aaMonetAvClicked:0 -trigger
+waitfor aaMonetAvClickedDone:0
+
+action aaHierViewSrc:0 -reset
+action aaHierViewSrc:0 -trigger
+waitfor aaHierViewSrc:0
+
+action aaMonetEvCheckFvFinished:0 -reset
+action aaMonetClickCheckButton:0 -isAssume {false} -trigger
+waitfor aaMonetEvCheckFvFinished:0
+
+action aaMonetDvSortColDesc:0 -reset
+action aaMonetDvSortColDesc:0 -data {5|PROPERTY_NAME} -trigger
+waitfor aaMonetDvSortColDesc:0
+

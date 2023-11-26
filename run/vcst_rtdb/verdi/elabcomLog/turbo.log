@@ -1,0 +1,3 @@
+Command Line: /home/ghonim/Synopsys/installed/vc_static/U-2023.03-SP2-1/vcs-mx/linux64/bin/elabcom -simflow -KDBRESOLVER -simvdaidir /home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/vcst_rtdb/.internal/design/simv.daidir -Xprefer_tech_lib -saveLevel -logdir /home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/vcst_rtdb/verdi/elabcomLog -silent -ssy -ssv -ssz +disable_message+C00373 -partialdesign -saveLevel -q -logdir /home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/vcst_rtdb/.internal/design/simv.daidir/kdbresolverLog
+uname(Linux localhost.ghonim 3.10.0-1160.99.1.el7.x86_64 #1 SMP Wed Sep 13 14:19:20 UTC 2023 x86_64)
+au time 0.039660 0.007627 0.012056 delta 16171008 16171008 total 220360704 220360704

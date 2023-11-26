@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<Global Formal_Problem_Id="0" Normalized="1">
+	<Static>
+		<StaticGC GC_ID="0" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_IDLE_to_READ" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_3_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="0" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="1" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_IDLE_to_READ" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_3_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="0" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="2" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_IDLE_to_WWAIT" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_2_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="2" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="3" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_IDLE_to_WWAIT" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_2_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="2" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="4" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_READ_to_RENABLE" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_6_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="4" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="5" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_READ_to_RENABLE" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_6_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="4" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="6" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_RENABLE_to_IDLE" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_10_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="6" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="7" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_RENABLE_to_IDLE" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_10_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="6" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="8" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_RENABLE_to_READ" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_12_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="8" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="9" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_RENABLE_to_READ" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_12_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="8" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="10" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_RENABLE_to_WWAIT" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_11_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="10" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="11" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_RENABLE_to_WWAIT" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_11_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="10" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="12" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WENABLEP_to_IDLE" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_18_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="12" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="13" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WENABLEP_to_IDLE" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_18_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="12" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="14" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WENABLEP_to_READ" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_20_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="14" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="15" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WENABLEP_to_READ" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_20_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="14" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="16" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WENABLEP_to_WRITE" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_16_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="16" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="17" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WENABLEP_to_WRITE" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_16_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="16" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="18" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WENABLEP_to_WRITEP" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_17_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="18" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="19" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WENABLEP_to_WRITEP" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_17_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="18" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="20" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WENABLEP_to_WWAIT" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_19_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="20" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="21" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WENABLEP_to_WWAIT" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_19_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="20" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="22" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WENABLE_to_IDLE" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_13_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="22" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="23" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WENABLE_to_IDLE" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_13_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="22" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="24" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WENABLE_to_READ" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_15_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="24" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="25" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WENABLE_to_READ" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_15_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="24" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="26" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WENABLE_to_WWAIT" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_14_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="26" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="27" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WENABLE_to_WWAIT" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_14_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="26" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="28" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WRITEP_to_WENABLEP" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_9_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="28" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="29" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WRITEP_to_WENABLEP" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_9_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="28" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="30" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WRITE_to_WENABLE" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_7_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="30" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="31" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WRITE_to_WENABLE" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_7_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="30" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="32" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WRITE_to_WENABLEP" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_8_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="32" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="33" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WRITE_to_WENABLEP" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_8_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="32" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="34" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WWAIT_to_WRITE" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_4_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="34" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="35" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WWAIT_to_WRITE" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_4_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="34" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="36" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WWAIT_to_WRITEP" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_5_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="36" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="37" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_WWAIT_to_WRITEP" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_5_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="36" Assist_Order="0" Register_Count="3">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="38" GC_Type="1" GC_SubType="2" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_state_transition" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_1_ended_reg_1" Fail_Value="0" Vacuity_GC_ID="38" Assist_Order="0" Register_Count="1">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+		<StaticGC GC_ID="39" GC_Type="1" GC_SubType="1" Prop_Name="APB_FSM_Controller.APB_FSM_Controller_chk.assert_state_transition" Prop_Type="1" Source_Type="2" Script_Type="0" Structural_Type="0" Coverage_Type="0" Deterministic="1" Hot="1" SamplePS="0" IsMgNames="0" GC_Net="APB_FSM_Controller_chk._SVAC_1_ended_reg_0" Fail_Value="0" Vacuity_GC_ID="38" Assist_Order="0" Register_Count="5">
+			<Initial_Constraints />
+			<State_Invariance />
+			<Fairness_Constraints />
+			<Non_Deterministic_Registers />
+		</StaticGC>
+	</Static>
+	<Dynamic>
+		<DynamicGC GC_ID="0" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="1" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="2" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="3" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="4" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="5" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="6" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="7" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="8" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="9" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="10" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="11" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="12" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="13" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="14" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="15" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="16" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="17" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="18" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="19" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="20" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="21" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="22" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="23" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="24" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="25" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="26" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="27" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="28" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="29" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="30" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="31" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="32" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="33" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="34" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="35" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="36" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="37" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="38" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+		<DynamicGC GC_ID="39" Status="0" Vacuity_Status="0" Witness_Status="0" CEX_Name="" BMC_Depth="-1" />
+	</Dynamic>
+</Global>

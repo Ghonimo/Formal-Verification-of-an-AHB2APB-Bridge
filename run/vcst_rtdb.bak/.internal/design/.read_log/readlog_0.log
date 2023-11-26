@@ -1,0 +1,8 @@
+BEGIN_VIOLATION
+RULE_NAME:SE
+FILE_NAME:../sva/APB_FSM_Controller_sva.sv
+LINE_NUMBER:37
+VCS_SEVERITY:Error
+MESSAGE:  Following verilog source has syntax error :VCST_RET&quot;../sva/APB_FSM_Controller_sva.sv&quot;, 37: token is &apos;=&gt;&apos;VCST_RET    @(posedge Hclk) disable iff (!Hresetn) PRESENT_STATE =&gt; VCST_RET$past(PRESENT_STATE);VCST_RET                                                           ^
+END_VIOLATION
+

@@ -1,0 +1,18 @@
+-- default WORK mapping
+WORK > DEFAULT
+TIMEBASE = PS
+
+DISAMBIG_CONCAT=TRUE
+
+OVERWRITE_PREDECLARATION_IN_LIB=TRUE
+
+-- default WORK mapping
+WORK > DEFAULT
+TIMEBASE = PS
+
+DISAMBIG_CONCAT=TRUE
+
+OVERWRITE_PREDECLARATION_IN_LIB=TRUE
+
+DEFAULT : /home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/vcst_rtdb/.internal/design/worklib
+

@@ -1,0 +1,4 @@
+assert_WWAIT_to_WRITE: assert property (p_WWAIT_to_WRITE);
+
+property p_WWAIT_to_WRITEP;
+    @(posedge Hclk) disable iff (!Hresetn) PRESENT_STATE == ST_WWAIT && valid |-> NEXT_STATE == ST_WRITEP;

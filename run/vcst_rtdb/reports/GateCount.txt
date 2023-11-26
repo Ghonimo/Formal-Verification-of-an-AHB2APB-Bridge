@@ -1,0 +1,6 @@
+# Gate Counts 
+Number of Flat Instances = 1141
+Number of Operator = 1141
+Number of Libcells = 0
+Number of Black-Box Instances = 0
+

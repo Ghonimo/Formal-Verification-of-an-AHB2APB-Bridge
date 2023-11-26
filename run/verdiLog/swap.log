@@ -1,0 +1,268 @@
+version: (200506)
+
+available memory: 64M bytes
+used memory: 73728 bytes [need 72K bytes if disable swap]
+
+used block: 2 [memory(2) file(0)]
+                 [ 8K(1) 64K(1) { total 72K bytes } ]
+overhead: (9538) bytes for (2) blocks [Average: (4769) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 1(times) 32K(bytes) [4K bytes compressed data from file]
+access => 33126(times) 261M(bytes)
+          [hit ratio: 99.997%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/verdiLog)
+used swap file number: (1)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (4)
+closeHead: (1)
+closeTail: (2)
+openCnt: (1)
+fid(3): fd(0) fileName(NULL)
+	mode(rb)	hot(1) cool(0) pos(0)
+fid(2): fd(65) fileName(/home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/verdiLog/_swap_0001#659202#15829)
+	size(0) lastModTime(0) curModTime(1700980932)
+	mode(w+b)	hot(0) cool(1) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(rb)	hot(2) cool(3) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+Swap system is reset at (Sun Nov 26 01:50:14 2023
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 253952 bytes [need 176K bytes if disable swap]
+
+used block: 10 [memory(10) file(0)]
+                 [ 8K(7) 64K(3) { total 248K bytes } ]
+overhead: (9538) bytes for (10) blocks [Average: (953) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 3(times) 90K(bytes) [11K bytes compressed data from file]
+access => 416973(times) 3272M(bytes)
+          [hit ratio: 99.9993%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/verdiLog)
+used swap file number: (6)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (7)
+closeHead: (4)
+closeTail: (6)
+openCnt: (1)
+fid(6): fd(0) fileName(NULL)
+	mode(rb)	hot(4) cool(0) pos(0)
+fid(5): fd(69) fileName(/home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/verdiLog/_swap_0001#659202#15829)
+	size(0) lastModTime(0) curModTime(1700981428)
+	mode(w+b)	hot(6) cool(4) pos(0)
+fid(4): fd(0) fileName(NULL)
+	mode(rb)	hot(5) cool(6) pos(0)
+fid(3): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(2): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+Swap system is reset at (Sun Nov 26 01:54:49 2023
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 327680 bytes [need 176K bytes if disable swap]
+
+used block: 12 [memory(12) file(0)]
+                 [ 8K(8) 64K(4) { total 320K bytes } ]
+overhead: (9538) bytes for (12) blocks [Average: (794) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 4(times) 123K(bytes) [16K bytes compressed data from file]
+access => 450107(times) 3533M(bytes)
+          [hit ratio: 99.9991%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/verdiLog)
+used swap file number: (7)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (10)
+closeHead: (7)
+closeTail: (8)
+openCnt: (1)
+fid(9): fd(0) fileName(NULL)
+	mode(rb)	hot(7) cool(0) pos(0)
+fid(8): fd(93) fileName(/home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/verdiLog/_swap_0001#659202#15829)
+	size(0) lastModTime(0) curModTime(1700982058)
+	mode(w+b)	hot(0) cool(7) pos(0)
+fid(7): fd(0) fileName(NULL)
+	mode(rb)	hot(8) cool(9) pos(0)
+fid(6): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(5): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(4): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(3): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(2): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+Swap system is reset at (Sun Nov 26 02:02:42 2023
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 507904 bytes [need 176K bytes if disable swap]
+
+used block: 20 [memory(20) file(0)]
+                 [ 8K(14) 64K(6) { total 496K bytes } ]
+overhead: (9538) bytes for (20) blocks [Average: (476) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 6(times) 183K(bytes) [23K bytes compressed data from file]
+access => 487662(times) 3838M(bytes)
+          [hit ratio: 99.9988%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/verdiLog)
+used swap file number: (12)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (13)
+closeHead: (10)
+closeTail: (12)
+openCnt: (1)
+fid(12): fd(0) fileName(NULL)
+	mode(rb)	hot(10) cool(0) pos(0)
+fid(11): fd(97) fileName(/home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/verdiLog/_swap_0001#659202#15829)
+	size(0) lastModTime(0) curModTime(1700982170)
+	mode(w+b)	hot(12) cool(10) pos(0)
+fid(10): fd(0) fileName(NULL)
+	mode(rb)	hot(11) cool(12) pos(0)
+fid(9): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(8): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(7): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(6): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(5): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(4): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(3): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(2): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+Swap system is reset at (Sun Nov 26 02:06:24 2023
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 688128 bytes [need 176K bytes if disable swap]
+
+used block: 28 [memory(28) file(0)]
+                 [ 8K(20) 64K(8) { total 672K bytes } ]
+overhead: (9538) bytes for (28) blocks [Average: (340) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 8(times) 241K(bytes) [30K bytes compressed data from file]
+access => 525208(times) 4142M(bytes)
+          [hit ratio: 99.9985%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/verdiLog)
+used swap file number: (15)
+
+
+
+swap file manager:
+arrSize: (256)
+idxCnt: (16)
+closeHead: (13)
+closeTail: (15)
+openCnt: (1)
+fid(15): fd(0) fileName(NULL)
+	mode(rb)	hot(13) cool(0) pos(0)
+fid(14): fd(117) fileName(/home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/verdiLog/_swap_0001#659202#15829)
+	size(0) lastModTime(0) curModTime(1700982568)
+	mode(w+b)	hot(15) cool(13) pos(0)
+fid(13): fd(0) fileName(NULL)
+	mode(rb)	hot(14) cool(15) pos(0)
+fid(12): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(11): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(10): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(9): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(8): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(7): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(6): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(5): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(4): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(3): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(2): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(1): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+fid(0): fd(0) fileName(NULL)
+	mode(NULL)	hot(0) cool(0) pos(0)
+Swap system is reset at (Sun Nov 26 02:09:57 2023
+)
+version: (200506)
+
+available memory: 64M bytes
+used memory: 770048 bytes [need 176K bytes if disable swap]
+
+used block: 31 [memory(31) file(0)]
+                 [ 8K(22) 64K(9) { total 752K bytes } ]
+overhead: (9538) bytes for (31) blocks [Average: (307) bytes/block]
+
+write  => 0(times) 0K(bytes) [0K bytes to file]
+read   => 9(times) 273K(bytes) [35K bytes compressed data from file]
+access => 559393(times) 4413M(bytes)
+          [hit ratio: 99.9984%]
+
+time: write(0) read(0)  unit: second
+
+swap file directory: (/home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/verdiLog)
+used swap fi

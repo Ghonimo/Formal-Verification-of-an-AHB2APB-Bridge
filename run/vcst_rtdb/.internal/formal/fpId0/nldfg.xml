@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<aep_glitch_detect />
+<aep_clock_trigger_detect />
+<aep_reset_detect />
+<aep_maxiter_comb>
+	<sccs />
+</aep_maxiter_comb>
+<aep_maxiter_seq>
+	<sccs />
+</aep_maxiter_seq>
+<false_risk_signals />
+<true_risk_signals />

@@ -1,0 +1,641 @@
+<ICD>
+  <SystemReset name="" value="" />
+  <Module name="APB_FSM_Controller_sva" DesignLang="Verilog" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="1">
+    <ModuleVariant name="APB_FSM_Controller_sva"  CheckerModule="">
+      <Property name="assert_state_transition" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="39" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_state_transition: assert property(p_state_transition);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_1_states_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_1_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_1_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_1_states" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_1_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_1_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_1_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_1_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_IDLE_to_WWAIT" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="48" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_IDLE_to_WWAIT: assert property(p_IDLE_to_WWAIT);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="Hwrite" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_2_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_2_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_2_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_2_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_2_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_2_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_IDLE_to_READ" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="54" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_IDLE_to_READ: assert property(p_IDLE_to_READ);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="Hwrite" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_3_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_3_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_3_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_3_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_3_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_3_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_WWAIT_to_WRITE" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="60" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_WWAIT_to_WRITE: assert property(p_WWAIT_to_WRITE);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_4_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_4_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_4_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_4_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_4_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_4_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_WWAIT_to_WRITEP" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="65" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_WWAIT_to_WRITEP: assert property(p_WWAIT_to_WRITEP);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_5_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_5_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_5_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_5_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_5_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_5_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_READ_to_RENABLE" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="71" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_READ_to_RENABLE: assert property(p_READ_to_RENABLE);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_6_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_6_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_6_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_6_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_6_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_6_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_WRITE_to_WENABLE" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="77" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_WRITE_to_WENABLE: assert property(p_WRITE_to_WENABLE);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_7_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_7_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_7_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_7_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_7_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_7_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_WRITE_to_WENABLEP" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="82" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_WRITE_to_WENABLEP: assert property(p_WRITE_to_WENABLEP);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_8_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_8_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_8_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_8_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_8_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_8_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_WRITEP_to_WENABLEP" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="88" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_WRITEP_to_WENABLEP: assert property(p_WRITEP_to_WENABLEP);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_9_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_9_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_9_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_9_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_9_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_9_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_RENABLE_to_IDLE" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="94" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_RENABLE_to_IDLE: assert property(p_RENABLE_to_IDLE);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_10_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_10_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_10_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_10_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_10_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_10_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_RENABLE_to_WWAIT" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="99" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_RENABLE_to_WWAIT: assert property(p_RENABLE_to_WWAIT);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="Hwrite" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_11_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_11_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_11_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_11_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_11_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_11_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_RENABLE_to_READ" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="104" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_RENABLE_to_READ: assert property(p_RENABLE_to_READ);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="Hwrite" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_12_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_12_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_12_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_12_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_12_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_12_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_WENABLE_to_IDLE" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="110" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_WENABLE_to_IDLE: assert property(p_WENABLE_to_IDLE);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_13_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_13_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_13_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_13_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_13_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_13_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_WENABLE_to_WWAIT" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="115" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_WENABLE_to_WWAIT: assert property(p_WENABLE_to_WWAIT);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="Hwrite" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_14_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_14_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_14_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_14_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_14_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_14_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_WENABLE_to_READ" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="120" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_WENABLE_to_READ: assert property(p_WENABLE_to_READ);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="Hwrite" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_15_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_15_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_15_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_15_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_15_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_15_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_WENABLEP_to_WRITE" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="126" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_WENABLEP_to_WRITE: assert property(p_WENABLEP_to_WRITE);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="Hwritereg" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_16_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_16_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_16_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_16_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_16_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_16_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_WENABLEP_to_WRITEP" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="131" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_WENABLEP_to_WRITEP: assert property(p_WENABLEP_to_WRITEP);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="Hwritereg" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_17_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_17_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_17_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_17_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_17_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_17_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_WENABLEP_to_IDLE" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="136" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_WENABLEP_to_IDLE: assert property(p_WENABLEP_to_IDLE);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="Hwritereg" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_18_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_18_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_18_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_18_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_18_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_18_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_WENABLEP_to_WWAIT" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="141" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_WENABLEP_to_WWAIT: assert property(p_WENABLEP_to_WWAIT);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="Hwritereg" />
+          <PropertyLeaf signal="Hwrite" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_19_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_19_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_19_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_19_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_19_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_19_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <Property name="assert_WENABLEP_to_READ" type="assert" kind="concurrent" InFunction="0" HasLocalVars="0" PropLang="SVA" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="146" MultiAutomata="1">
+        <PropertySource><![CDATA[assert_WENABLEP_to_READ: assert property(p_WENABLEP_to_READ);
+
+]]></PropertySource>
+        <Clock>
+        <ClockSignal signal="Hclk" />
+        </Clock>
+        <DisableIff>
+          <DisableIffSignal signal="Hresetn" />
+        </DisableIff>
+        <PropertyLeafs> 
+          <PropertyLeaf signal="Hclk" />
+          <PropertyLeaf signal="PRESENT_STATE" />
+          <PropertyLeaf signal="valid" />
+          <PropertyLeaf signal="Hwritereg" />
+          <PropertyLeaf signal="Hwrite" />
+          <PropertyLeaf signal="NEXT_STATE" />
+        </PropertyLeafs> 
+        <RegInitializations> 
+          <RegInitialization signal="_SVAC_20_ended_reg_0" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_20_ended_reg_1" rhs="1'b0" />
+          <RegInitialization signal="_SVAC_20_ended_reg" rhs="1'b0" />
+        </RegInitializations> 
+        <PropertyEncoding type="Deterministic" kind="negativeAlways" IsTautology="0" >
+          <EndedSignal signal="_SVAC_20_ended_reg_0" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="vacuityEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_20_ended_reg_1" />
+        </PropertyEncoding>
+        <PropertyEncoding type="Deterministic" kind="positiveEventually" IsTautology="0" >
+          <EndedSignal signal="_SVAC_20_ended_reg" />
+        </PropertyEncoding>
+      </Property>
+      <VariantInstance name="APB_FSM_Controller.APB_FSM_Controller_chk" FileName="../sva/APB_FSM_Controller_sva.sv" LineNo="153">
+      </VariantInstance>
+    </ModuleVariant>
+  </Module>
+</ICD>

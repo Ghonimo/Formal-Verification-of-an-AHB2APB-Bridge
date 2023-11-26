@@ -1,0 +1,3 @@
+#!/bin/sh
+EXEDIR=/home/ghonim/Synopsys/installed/vc_static/U-2023.03-SP2-1/linux64/ctg/bin
+$EXEDIR/tw_slave -exeDir $EXEDIR -workDir /home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/vcst_rtdb/.internal/formal/fpId0/tw/run_tw_session/log.tw-slave -mgHome $MG_HOME -ydLogDir /home/ghonim/Fall_2023/ECE560/project/560_FinalProject/run/vcst_rtdb/.internal/formal/fpId0/tw/run_tw_session/log.tw-to-yd -tipCutCone -encryptLogs -glHome $GL_HOME -traceCompression -seqaigCompression -bmcMessages -taskRusageMessages -logTimestamps -addMTLim -handshakeTimeout 7200 -skipLowerDepthMsg 3 -ftaFlowVersion 0 -taskRusageMessagesInterval 300 -watchdogInterval 10

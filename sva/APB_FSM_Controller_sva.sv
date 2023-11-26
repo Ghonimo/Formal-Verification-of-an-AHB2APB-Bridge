@@ -16,7 +16,9 @@ module APB_FSM_Controller_sva(input wire Hclk,
                               input wire [2:0] Pselx,
                               input wire [31:0] Paddr,
                               input wire [31:0] Pwdata,
-                              input wire Hreadyout);
+                              input wire Hreadyout,
+                              input wire [2:0] PRESENT_STATE,
+                              input wire [2:0] NEXT_STATE);
 //PARAMETERS
 
 parameter ST_IDLE=3'b000;
@@ -32,26 +34,5 @@ parameter ST_WENABLEP=3'b111;
 
 endmodule
 
-bind APB_FSM_Controller APB_FSM_Controller_sva APB_FSM_Controller_bind (
-    .Hclk(Hclk),
-    .Hresetn(Hresetn),
-    .valid(valid),
-    .Hwrite(Hwrite),
-    .Hwritereg(Hwritereg),
-    .Hwdata(Hwdata),
-    .Haddr(Haddr),
-    .Haddr1(Haddr1),
-    .Haddr2(Haddr2),
-    .Hwdata1(Hwdata1),
-    .Hwdata2(Hwdata2),
-    .Prdata(Prdata),
-    .tempselx(tempselx),
-    .Pwrite(Pwrite),
-    .Penable(Penable),
-    .Pselx(Pselx),
-    .Paddr(Paddr),
-    .Pwdata(Pwdata),
-    .Hreadyout(Hreadyout)
-);
-
+bind APB_FSM_Controller APB_FSM_Controller_sva APB_FSM_Controller_chk(.*);
 

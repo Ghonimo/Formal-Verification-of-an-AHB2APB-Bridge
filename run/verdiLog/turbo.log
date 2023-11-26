@@ -1,0 +1,17 @@
+Command Line: /home/ghonim/Synopsys/installed/vc_static/U-2023.03-SP2-1/verdi/platform/LINUXAMD64/bin/Novas -vcst -vcstOpts {-demo -file fpv_run_apb_controller.tcl -prompt vcf -mode64 -fmode _default -new_verdi_comm} -lca
+uname(Linux localhost.ghonim 3.10.0-1160.99.1.el7.x86_64 #1 SMP Wed Sep 13 14:19:20 UTC 2023 x86_64)
+Property Selection Difference Report :
+
+  - SVA Property Selection Result :
+(1) Newly Enabled Properties :
+    APB_FSM_Controller.APB_FSM_Controller_bind.assert_IDLE_to_READ
+
+(2) Newly Disabled Properties :
+    None.
+
+
+
+Property Selection Ends Successfully.
+
+
+Disabled Warning Message: Active waveform file has changed. The Assertion Analyzer contents will be cleared.

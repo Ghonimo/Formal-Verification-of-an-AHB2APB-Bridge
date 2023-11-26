@@ -1,0 +1,28 @@
+
+
+### create_clock	Num_calls 1	Total_time 00:00:00.018557	Total malloc-M 0
+1	File:fpv_run_apb_controller.tcl::13	Time:00:00:00.018557	CpuTime:0.01	 Malloc-MB:0
+
+### create_reset	Num_calls 1	Total_time 00:00:00.025132	Total malloc-M 0
+1	File:fpv_run_apb_controller.tcl::14	Time:00:00:00.025132	CpuTime:0.00	 Malloc-MB:0
+
+### get_message_db_ptr	Num_calls 1	Total_time 00:00:00.000009	Total malloc-M 0
+
+### get_report_db_ptr	Num_calls 1	Total_time 00:00:00.000007	Total malloc-M 0
+
+### report_vcst_var	Num_calls 1	Total_time 00:00:00.000733	Total malloc-M 0
+
+### restore_session	Num_calls 1	Total_time 00:00:00.000092	Total malloc-M 0
+
+### set_fml_appmode	Num_calls 1	Total_time 00:00:00.000041	Total malloc-M 0
+
+### set_fml_var	Num_calls 1	Total_time 00:00:00.000070	Total malloc-M 0
+
+### sim_run	Num_calls 1	Total_time 00:00:00.023546	Total malloc-M 12
+1	File:fpv_run_apb_controller.tcl::17	Time:00:00:00.023546	CpuTime:0.01	 Malloc-MB:12
+
+### sim_save_reset	Num_calls 1	Total_time 00:00:00.027787	Total malloc-M -11
+1	File:fpv_run_apb_controller.tcl::18	Time:00:00:00.027787	CpuTime:0.00	 Malloc-MB:-11
+
+ ****************************Shell commands Recording************************
+MasterSourceFile fpv_run_apb_controller.tcl

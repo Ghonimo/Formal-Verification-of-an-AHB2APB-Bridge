@@ -1,0 +1,3 @@
+#delimiter /  
+#sig_name,  af(float,min), sp(float,average), timing_critical(text,last) 
+APB_FSM_Controller.Hresetn,0,0,C:1 

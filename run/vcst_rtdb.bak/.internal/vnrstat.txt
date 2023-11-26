@@ -1,0 +1,12 @@
+M is representing peak till the message
+Malloc-M represents malloc memory at the message
+Available-M represents available memory in the system
+STATS:: before LicenseMgr Init : M=1443.92mb, Malloc-M=398mb, Available-M=740mb, T=0s CPU=0s W=(2023-11-26 02:15:04)
+STATS:: after  LicenseMgr Init : M=1449.19mb, Malloc-M=398mb, Available-M=735mb, T=0s CPU=0.49s W=(2023-11-26 02:15:04)
+M is representing peak till the message
+Malloc-M represents malloc memory at the message
+Available-M represents available memory in the system
+STATS:: before VCS Read Task : M=1522.66mb, Malloc-M=435mb, Available-M=700mb, T=0s CPU=0s W=(2023-11-26 02:15:07)
+STATS:: after  VCS Read Task : M=1522.66mb, Malloc-M=436mb, Available-M=699mb, T=1s CPU=0.41s W=(2023-11-26 02:15:08)
+STATS:: before Load VCS Message: M=1522.66mb, Malloc-M=436mb, Available-M=698mb, T=0s CPU=0s W=(2023-11-26 02:15:09)
+STATS:: after  Load VCS Message: M=1522.66mb, Malloc-M=436mb, Available-M=698mb, T=0s CPU=0.02s W=(2023-11-26 02:15:09)

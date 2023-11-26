@@ -16,3 +16,21 @@ create_reset Hresetn -sense low
 # Runing a reset simulation
 sim_run -stable 
 sim_save_reset
+
+# No HREADY in reset state
+fvassume -expr {!(!Hresetn && Hreadyin)}
+
+# Fix HTRANS to be 2'b10 or 2'b11
+fvassume -expr {(Htrans == 2'b10) || (Htrans == 2'b11)}
+
+# Valid HWDATA in data cycle of HWRITE
+fvassume -expr {@(posedge Hclk) (Hwrite |=> !$isunknown(Hwdata))}
+
+# HADDR should be in the range of peripherals address
+fvassume -expr {@(posedge Hclk) (Haddr>=32'h8000_0000 && Haddr<32'h8C00_0000)}
+
+# when HWRITE is high HREADYIN should be high in that cycle and in following cycle 
+fvassume -expr {@(posedge Hclk) (Hwrite |-> Hreadyin[*2])}
+
+# HREADYIN is high for 2 consecutive cycles later HREADYIN shouldn't be high until there are 2 times HREADYOUT
+fvassume -expr {@(posedge Hclk) (Hreadyin ##1 Hreadyin |=> (!Hreadyin throughout Hreadyout[->2]))}

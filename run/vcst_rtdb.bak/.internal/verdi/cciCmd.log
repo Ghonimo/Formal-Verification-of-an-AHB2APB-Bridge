@@ -1,0 +1,5 @@
+12:42:03 : gui:mo.ece.pdx.edu:44302
+12:42:03 : ___vcstRenameMan
+12:42:05 : ___vcDumpDefMsgColor
+12:42:05 : ___vcChangeMsgColor msg_color_warn magenta
+12:42:05 : ___vcChangeMsgColor msg_color_info black

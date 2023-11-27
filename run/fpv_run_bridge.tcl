@@ -33,5 +33,5 @@ fvassume -expr {@(posedge Hclk) (Hwrite |-> Hreadyin[*2])}
 # HREADYIN is high for 2 consecutive cycles later HREADYIN shouldn't be high until there are 2 times HREADYOUT
 fvassume -expr {@(posedge Hclk) (Hreadyin ##1 Hreadyin |=> (!Hreadyin throughout Hreadyout[->2]))}
 
-# For Read transaction HREADYIN shouldn't be high sencond until HREADYOUT of 1st read is high (added for Penable_read)
+# For Read transaction HREADYIN shouldn't be high sencond until HREADYOUT of 1st read is high (added for Hreadyout_penable_read)
 fvassume -expr {@(posedge Hclk) (Hreadyin && !Hwrite |=> (!Hreadyin until Hreadyout))}  

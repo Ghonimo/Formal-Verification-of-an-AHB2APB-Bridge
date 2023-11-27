@@ -39,6 +39,14 @@ sequence psel_s0;
 $onehot(Pselx) ##0 (Pselx[0] ##1 Pselx[0]);
 endsequence
 
+sequence psel_s1;
+$onehot(Pselx) ##0 (Pselx[1] ##1 Pselx[1]);
+endsequence
+
+sequence psel_s2;
+$onehot(Pselx) ##0 (Pselx[2] ##1 Pselx[2]);
+endsequence
+
 
 // HRDATA should be same as PRDATA  when PENABLE(Enable cycle)
 property same_HR_PR_data;
@@ -46,24 +54,24 @@ property same_HR_PR_data;
 Penable |-> Hrdata == Prdata;
 endproperty
 
-property same_HPwrite_read;         //Has issue when write after read
+property same_HPwrite_read;         //Has issue when read after write
 @(posedge Hclk) disable iff(!Hresetn)
 read_s |=> (Pwrite == $past(Hwrite));
 endproperty
 
-property same_HPwrite_write;        //Has issue when write after read
+property same_HPwrite_write;        //Has issue when read after write
 @(posedge Hclk) disable iff(!Hresetn)
 write_s |=> ##1 (Pwrite == $past(Hwrite));
 endproperty
 
-property penable_read;
+property Hreadyout_penable_read;
 @(posedge Hclk) disable iff(!Hresetn)
-read_s |-> ##2 Penable;
+read_s |-> ##2 Penable && Hreadyout;
 endproperty
 
-property penable_write;             
+property Hreadyout_penable_write;             
 @(posedge Hclk) disable iff(!Hresetn)
-write_s |-> ##3 Penable;
+write_s |-> ##3 Penable && Hreadyout;
 endproperty
 
 property no_penable_2cycles;
@@ -81,11 +89,30 @@ property read_addr0;
 read_s ##0 addr0 |=>  psel_s0;
 endproperty
 
-property write_addr0;                   //Has issue when write after read
+property read_addr1;
+@(posedge Hclk) disable iff(!Hresetn)
+read_s ##0 addr1 |=>  psel_s1;
+endproperty
+
+property read_addr2;
+@(posedge Hclk) disable iff(!Hresetn)
+read_s ##0 addr2 |=>  psel_s2;
+endproperty
+
+property write_addr0;                   //Has issue when read after write
 @(posedge Hclk) disable iff(!Hresetn)
 write_s ##0 addr0 |=>  ##1 psel_s0;
 endproperty
 
+property write_addr1;                   //Has issue when read after write
+@(posedge Hclk) disable iff(!Hresetn)
+write_s ##0 addr1 |=>  ##1 psel_s1;
+endproperty
+
+property write_addr2;                   //Has issue when read after write
+@(posedge Hclk) disable iff(!Hresetn)
+write_s ##0 addr2 |=>  ##1 psel_s2;
+endproperty
 
 
 
@@ -93,10 +120,10 @@ endproperty
 assert_same_HR_PR_data: assert property (same_HR_PR_data)
     else $display("HRDATA and PRDATA are not same when penable");
 
-assert_penable_read: assert property (penable_read)
+assert_Hreadyout_penable_read: assert property (Hreadyout_penable_read)
     else $display("No Penable after start of read transaction");
     
-assert_penable_write: assert property (penable_write)
+assert_Hreadyout_penable_write: assert property (Hreadyout_penable_write)
     else $display("No Penable after start of write transaction");
 
 assert_no_penable_2cycles: assert property (no_penable_2cycles)
@@ -108,7 +135,19 @@ assert_valid_Psel: assert property (valid_Psel)
 assert_read_addr0: assert property (read_addr0)
     else $display("Read transaction should have valid Psel");
 
+assert_read_addr1: assert property (read_addr1)
+    else $display("Read transaction should have valid Psel");
+
+assert_read_addr2: assert property (read_addr2)
+    else $display("Read transaction should have valid Psel");
+
 assert_write_addr0: assert property (write_addr0)
+    else $display("Write transaction should have valid Psel");
+
+assert_write_addr1: assert property (write_addr1)
+    else $display("Write transaction should have valid Psel");
+
+assert_write_addr2: assert property (write_addr2)
     else $display("Write transaction should have valid Psel");
 
 assert_same_HPwrite_read: assert property (same_HPwrite_read)

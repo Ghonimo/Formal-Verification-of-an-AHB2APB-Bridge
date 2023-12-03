@@ -54,14 +54,14 @@ property same_HR_PR_data;
 Penable |-> Hrdata == Prdata;
 endproperty
 
-property same_HPwrite_read;         //Has issue when read after write
+property same_HPwrite_read;         //Has issue when read after write -> Resolved
 @(posedge Hclk) disable iff(!Hresetn)
-read_s |=> (Pwrite == $past(Hwrite));
+!Hwrite && Hreadyin && !($past(Hwrite) && $past(Hreadyin)) |=> (Pwrite == 0);
 endproperty
 
-property same_HPwrite_write;        //Has issue when read after write
+property same_HPwrite_write;        //Has issue when read after write -> Resolved
 @(posedge Hclk) disable iff(!Hresetn)
-write_s |=> ##1 (Pwrite == $past(Hwrite));
+write_s |=> ##1 (Pwrite == 1);
 endproperty
 
 property Hreadyout_penable_read;
@@ -86,17 +86,17 @@ endproperty
 
 property read_addr0;
 @(posedge Hclk) disable iff(!Hresetn)
-read_s ##0 addr0 |=>  psel_s0;
+read_s ##0 addr0 && !($past(Hwrite) && $past(Hreadyin)) |=>  psel_s0;
 endproperty
 
 property read_addr1;
 @(posedge Hclk) disable iff(!Hresetn)
-read_s ##0 addr1 |=>  psel_s1;
+read_s ##0 addr1 && !($past(Hwrite) && $past(Hreadyin)) |=>  psel_s1;
 endproperty
 
 property read_addr2;
 @(posedge Hclk) disable iff(!Hresetn)
-read_s ##0 addr2 |=>  psel_s2;
+read_s ##0 addr2 && !($past(Hwrite) && $past(Hreadyin)) |=>  psel_s2;
 endproperty
 
 property write_addr0;                   //Has issue when read after write
@@ -114,6 +114,10 @@ property write_addr2;                   //Has issue when read after write
 write_s ##0 addr2 |=>  ##1 psel_s2;
 endproperty
 
+property read_after_write;
+@(posedge Hclk) disable iff(!Hresetn)
+!Hwrite && Hreadyin && ($past(Hwrite, 1) && $past(Hreadyin, 1)) |=>  ##2 (Pwrite == 0 && Paddr == $past(Haddr, 3));
+endproperty
 
 
 
@@ -155,6 +159,9 @@ assert_same_HPwrite_read: assert property (same_HPwrite_read)
 
 assert_same_HPwrite_write: assert property (same_HPwrite_write)
     else $display("Hwrite and Pwrite should be same for write transaction");
+
+assert_read_after_write: assert property (read_after_write)
+    else $display("Pwrite and Haddr for Read followed by Write transfer");
 
 endmodule
 

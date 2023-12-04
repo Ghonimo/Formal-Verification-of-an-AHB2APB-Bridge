@@ -35,14 +35,17 @@ sequence same_write_s;
 Pwrite == Hwrite;
 endsequence
 
+//For Address range 8000_0000 to 8400_0000
 sequence psel_s0;
 $onehot(Pselx) ##0 (Pselx[0] ##1 Pselx[0]);
 endsequence
 
+//For Address range 8400_0000 to 8800_0000
 sequence psel_s1;
 $onehot(Pselx) ##0 (Pselx[1] ##1 Pselx[1]);
 endsequence
 
+//For Address range 8800_0000 to 8C00_0000
 sequence psel_s2;
 $onehot(Pselx) ##0 (Pselx[2] ##1 Pselx[2]);
 endsequence
@@ -54,36 +57,43 @@ property same_HR_PR_data;
 Penable |-> Hrdata == Prdata;
 endproperty
 
+//PWRITE should be same as HWRITE for Read transfer
 property same_HPwrite_read;         //Has issue when read after write -> Resolved
 @(posedge Hclk) disable iff(!Hresetn)
 !Hwrite && Hreadyin && !($past(Hwrite) && $past(Hreadyin)) |=> (Pwrite == 0);
 endproperty
 
+////PWRITE should be same as HWRITE for Write transfer
 property same_HPwrite_write;        //Has issue when read after write -> Resolved
 @(posedge Hclk) disable iff(!Hresetn)
 write_s |=> ##1 (Pwrite == 1);
 endproperty
 
+//HREADYOUT and PENABLE should be high at end of transaction for Read transfer
 property Hreadyout_penable_read;
 @(posedge Hclk) disable iff(!Hresetn)
 read_s |-> ##2 Penable && Hreadyout;
 endproperty
 
+//HREADYOUT and PENABLE should be high at end of transaction for Read transfer
 property Hreadyout_penable_write;             
 @(posedge Hclk) disable iff(!Hresetn)
 write_s |-> ##3 Penable && Hreadyout;
 endproperty
 
+//PENABLE shouldn't be high for 2 cycles continously
 property no_penable_2cycles;
 @(posedge Hclk) disable iff(!Hresetn)
 Penable |=> !Penable;
 endproperty
 
+// Valid PSEL
 property valid_Psel;
 @(posedge Hclk) disable iff(!Hresetn)
 $onehot0(Pselx);
 endproperty
 
+// For Read transfer next cycle should have corresponding PSEL high for next 2 clocks and should be onehot
 property read_addr0;
 @(posedge Hclk) disable iff(!Hresetn)
 read_s ##0 addr0 && !($past(Hwrite) && $past(Hreadyin)) |=>  psel_s0;
@@ -99,6 +109,7 @@ property read_addr2;
 read_s ##0 addr2 && !($past(Hwrite) && $past(Hreadyin)) |=>  psel_s2;
 endproperty
 
+// For Write transfer 2 cycles after should have corresponding PSEL high for next 2 clocks and should be onehot
 property write_addr0;                   //Has issue when read after write
 @(posedge Hclk) disable iff(!Hresetn)
 write_s ##0 addr0 |=>  ##1 psel_s0;
@@ -114,12 +125,37 @@ property write_addr2;                   //Has issue when read after write
 write_s ##0 addr2 |=>  ##1 psel_s2;
 endproperty
 
-property read_after_write;
+// If a read transfer immediately follows a write, then 3 wait states are required to complete the read
+property read_after_write_3waitSates;
 @(posedge Hclk) disable iff(!Hresetn)
-!Hwrite && Hreadyin && ($past(Hwrite, 1) && $past(Hreadyin, 1)) |=>  ##2 (Pwrite == 0 && Paddr == $past(Haddr, 3));
+//Note: Without ##1, we are getting faliure. Even though there is no past write, assertion is being verified(No vaccous success).
+##1 !Hwrite && Hreadyin && ($past(Hwrite, 1) && $past(Hreadyin, 1)) |=>  ##2 (Pwrite == 0 && Paddr == $past(Haddr, 3));
 endproperty
 
+// Should support back to back writes for 2 different addresses
+property write_2_addrs;
+logic [31:0] haddr;
+@(posedge Hclk) disable iff(!Hresetn)
+(write_s, haddr = Haddr) |=> (Hwrite && Hreadyin && Haddr != haddr);
+endproperty
 
+// Should have Read after Read in 2 cycles (Burst of reads)
+property burst_of_reads;
+@(posedge Hclk) disable iff(!Hresetn)
+read_s |=> ##1 read_s;
+endproperty
+
+// Should have back to back writes (Burst of writes)
+property burst_of_writes;
+@(posedge Hclk) disable iff(!Hresetn)
+write_s |=>  write_s;
+endproperty
+
+// Should have Read after Write (Back to back transfers)
+property back_to_back;
+@(posedge Hclk) disable iff(!Hresetn)
+write_s |=>  read_s;
+endproperty
 
 assert_same_HR_PR_data: assert property (same_HR_PR_data)
     else $display("HRDATA and PRDATA are not same when penable");
@@ -160,8 +196,16 @@ assert_same_HPwrite_read: assert property (same_HPwrite_read)
 assert_same_HPwrite_write: assert property (same_HPwrite_write)
     else $display("Hwrite and Pwrite should be same for write transaction");
 
-assert_read_after_write: assert property (read_after_write)
+assert_read_after_write_3waitSates: assert property (read_after_write_3waitSates)
     else $display("Pwrite and Haddr for Read followed by Write transfer");
+
+cover_write_2_addrs: cover property (write_2_addrs);
+
+cover_burst_of_reads: cover property (burst_of_reads);
+
+cover_burst_of_writes: cover property (burst_of_writes);
+
+cover_back_to_back: cover property (back_to_back);
 
 endmodule
 

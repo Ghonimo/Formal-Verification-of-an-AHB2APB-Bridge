@@ -22,16 +22,18 @@ fvassume -expr {!(!Hresetn && Hreadyin)}
 fvassume -expr {(Htrans == 2'b10) || (Htrans == 2'b11)}
 
 # Valid HWDATA in data cycle of HWRITE
-fvassume -expr {@(posedge Hclk) (Hwrite |=> !$isunknown(Hwdata))}
+fvassume -expr {@(posedge Hclk) disable iff(!Hresetn) (Hwrite |=> !$isunknown(Hwdata))}
 
 # HADDR should be in the range of peripherals address
-fvassume -expr {@(posedge Hclk) (Haddr>=32'h8000_0000 && Haddr<32'h8C00_0000)}
+fvassume -expr {@(posedge Hclk) disable iff(!Hresetn) (Haddr>=32'h8000_0000 && Haddr<32'h8C00_0000)}
 
 # when HWRITE is high HREADYIN should be high in that cycle and in following cycle 
-fvassume -expr {@(posedge Hclk) (Hwrite |-> Hreadyin[*2])}
+fvassume -expr {@(posedge Hclk) disable iff(!Hresetn) (Hwrite |-> Hreadyin[*2])}
 
 # HREADYIN is high for 2 consecutive cycles later HREADYIN shouldn't be high until there are 2 times HREADYOUT
-fvassume -expr {@(posedge Hclk) (Hreadyin ##1 Hreadyin |=> (!Hreadyin throughout Hreadyout[->2]))}
+fvassume -expr {@(posedge Hclk) disable iff(!Hresetn) (Hreadyin ##1 Hreadyin |=> (!Hreadyin throughout Hreadyout[->2]))}
 
 # For Read transaction HREADYIN shouldn't be high sencond until HREADYOUT of 1st read is high (added for Hreadyout_penable_read)
-fvassume -expr {@(posedge Hclk) (Hreadyin && !Hwrite |=> (!Hreadyin until Hreadyout))}  
+fvassume -expr {@(posedge Hclk) disable iff(!Hresetn) (Hreadyin && !Hwrite |=> (!Hreadyin until Hreadyout))}  
+
+

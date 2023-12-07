@@ -19,7 +19,33 @@ let addr0 = Haddr>=32'h8000_0000 && Haddr<32'h8400_0000;
 let addr1 = Haddr>=32'h8400_0000 && Haddr<32'h8800_0000;
 let addr2 = Haddr>=32'h8800_0000 && Haddr<32'h8C00_0000;
 
+let possible_Pselx = ((Pselx == 0) || (Pselx == 1) || (Pselx == 2) || (Pselx == 4)); 
+
     // Assertions, assumptions and cover properties go here
+sequence write; 
+        Pwrite &&  possible_Pselx  && !Penable ##1 Pwrite && possible_Pselx && Penable;
+endsequence
+
+sequence read; 
+        !Pwrite && possible_Pselx && !Penable ##1 !Pwrite && possible_Pselx && Penable;
+endsequence
+
+//read after write, Padder must be the same value for 3 cycles after write is true.
+property read_after_write;
+    @(posedge Hclk) disable iff(!Hresetn)
+      write ##1 read  |->##1 $past(Paddr,2) == $past(Paddr);
+endproperty
+
+//checks if all items are at zero after reset
+property reset_check_Paddr;
+    @(posedge Hclk)
+        $rose(Hresetn) |-> Paddr == 0;  
+endproperty
+
+property reset_check_Penable;
+    @(posedge Hclk)
+        $rose(Hresetn) |-> Penable == 0;  
+endproperty
 
 //write transaction
 sequence write_s;
@@ -49,7 +75,6 @@ endsequence
 sequence psel_s2;
 $onehot(Pselx) ##0 (Pselx[2] ##1 Pselx[2]);
 endsequence
-
 
 // HRDATA should be same as PRDATA  when PENABLE(Enable cycle)
 property same_HR_PR_data;
@@ -207,7 +232,30 @@ cover_burst_of_writes: cover property (burst_of_writes);
 
 cover_back_to_back: cover property (back_to_back);
 
+property reset_check_Pwrite;
+    @(posedge Hclk)
+        $rose(Hresetn) |-> Pwrite == 0;  
+endproperty
+
+property reset_check_Pwdata;
+    @(posedge Hclk)
+        $rose(Hresetn) |-> Pwdata == 0;  
+endproperty
+
+property reset_check_Pselx;
+    @(posedge Hclk)
+        $rose(Hresetn) |-> Pselx == 0;  
+endproperty
+
+read_after_write1: assert property (read_after_write);
+reset_check_haddr1: assert property (reset_check_Paddr);
+reset_check_Pwrite1: assert property (reset_check_Pwrite);  
+reset_check_Pwdata1: assert property (reset_check_Pwdata);  
+reset_check_Pselx1: assert property (reset_check_Pselx);  
 endmodule
 
-bind Bridge_Top Bridge_Top_sva chk_bridge_top (.*);
 
+bind Bridge_Top Bridge_Top_sva chk_bridge_top (.Hclk(Hclk), .Hresetn(Hresetn), .Hwrite(Hwrite), .Hreadyin(Hreadyin), .Hwdata(Hwdata), .Haddr(Haddr), .Htrans(Htrans), .Prdata(Prdata), .Pselx(Pselx), .Paddr(Paddr), .Pwdata(Pwdata), .Penable(Penable), .Pwrite(Pwrite), .Hreadyout(Hreadyout), .Hresp(Hresp), .Hrdata(Hrdata));
+
+
+ 

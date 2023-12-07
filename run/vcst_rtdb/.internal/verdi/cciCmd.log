@@ -1,0 +1,9 @@
+12:50:11 : gui:mo.ece.pdx.edu:38402
+12:50:11 : ___vcstRenameMan
+12:50:13 : ___vcDumpDefMsgColor
+12:50:13 : ___vcChangeMsgColor msg_color_warn magenta
+12:50:13 : ___vcChangeMsgColor msg_color_info black
+12:50:13 : MasterSourceFile fpv_run_bridge.tcl
+12:50:17 : ___fvSavePropDBToStream
+12:50:17 : ___fvSavePropDBToStream
+12:50:17 : ___vcDisplayAbstractSrcFromAutoBBox

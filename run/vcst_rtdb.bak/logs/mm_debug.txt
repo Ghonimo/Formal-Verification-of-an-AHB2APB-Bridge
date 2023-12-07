@@ -1,0 +1,19 @@
+2023-11-26 12:42:02:1701031322846 | INFO  | Process Limits
+	 Virual Memory -> 65536 MB
+	 Time Limit -> no limit
+	 Stack Size -> no limit
+	 Data Segment -> no limit
+	 File Size -> no limit
+	 Lock Limit -> no limit
+	 CPU Time Limit -> no limit
+	 RSS  -> no limit
+	 Threads  -> 4096 
+Available Cores : 32
+
+2023-11-26 12:42:02:1701031322846 | INFO  | Share License key => 7330012226831291276 for master run  Old Key => 7330012226831291276
+2023-11-26 12:42:04:1701031324019 | INFO  | registerSyncPoint: check_cdc cmdPtr: 0x2ba8a000
+2023-11-26 12:42:04:1701031324019 | INFO  | registerSyncPoint: check_glitch cmdPtr: 0x2ba90000
+2023-11-26 12:42:04:1701031324019 | INFO  | registerSyncPoint: check_rdc cmdPtr: 0x12421980
+2023-11-26 12:42:04:1701031324019 | INFO  | registerSyncPoint: finish_distributed_run cmdPtr: 0x2b941c00
+2023-11-26 12:42:04:1701031324020 | INFO  | registerSyncPoint: write_abstract_model cmdPtr: 0x2c2d0800
+2023-11-26 12:42:04:1701031324020 | INFO  | registerSyncPoint: write_constr_abstract_model cmdPtr: 0x2baba000

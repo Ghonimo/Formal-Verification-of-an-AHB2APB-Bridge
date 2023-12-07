@@ -1,0 +1,134 @@
+@verdi rc file Version 1.0
+[vgifRuleRc]
+[vgifRuleVersion]
+version = 1
+[ruleSet]
+ruleNum = 8
+description = "Hyperlink rule for VCST"
+[ruleSet.rule0]
+patternNum = 1
+ruleName = "FRV XML parser"
+action = "viaLogViewerOpenFileHyperlink -fileName \"$fileName\" -lineNum \"$lineNum\" -linkLineNum \"$vgifActionLineNum\" -window \"$vgifActionWindow\"" "verdiSetStatusMsg -win Verdi_1 \" \""
+[ruleSet.rule0.pattern0]
+varNum = 3
+pattern = "File: '((~([a-zA-Z0-9_.-]+)?/)?(\.{0,2}/{0,2})*([a-zA-Z0-9_.-]+/{0,2})*([?a-zA-Z0-9_\-:\+]+\.[a-zA-Z][a-zA-Z0-9]*)(?!/))', lineNo: (\d+)"
+[ruleSet.rule0.pattern0.var0]
+varName = "hyperPos"
+subPatternNum = 0
+[ruleSet.rule0.pattern0.var1]
+varName = "lineNum"
+subPatternNum = 7
+[ruleSet.rule0.pattern0.var2]
+varName = "fileName"
+subPatternNum = 1
+[ruleSet.rule1]
+patternNum = 1
+ruleName = "SVR parser"
+action = "set lineNum 1" "if {$lineNum1  != \"\"} {" "  set lineNum $lineNum1" "}" "" "if {[file isfile $smlFileName]} {" "        viaLogViewerOpenFileHyperlink -fileName \"$smlFileName\" -lineNum \"$lineNum\" -linkLineNum \"$vgifActionLineNum\" -window \"$vgifActi\
+onWindow\"" "        verdiSetStatusMsg -win Verdi_1 \" \"" "}  else {" "     verdiSetStatusMsg -win Verdi_1 \"File is not found\"" "}"
+[ruleSet.rule1.pattern0]
+varNum = 3
+pattern = "(^#.*$)|(at line (\d+) in (\"?'?((~([a-zA-Z0-9_.-]+)?/|\.\.\./)?(\.{0,2}/{0,2})*([a-zA-Z0-9_.-]+/{0,2})*([a-zA-Z0-9_-:]+\.[a-zA-Z][a-zA-Z0-9]*|Makefile)(?!/))'?\"?))"
+[ruleSet.rule1.pattern0.var0]
+varName = "smlFileName"
+subPatternNum = 5
+[ruleSet.rule1.pattern0.var1]
+varName = "fileRef"
+subPatternNum = 4
+[ruleSet.rule1.pattern0.var2]
+varName = "lineNum1"
+subPatternNum = 3
+[ruleSet.rule2]
+patternNum = 2
+ruleName = "Tcl sript error"
+action = "set lineNum 1" "if {$lineNum1  != \"\"} {" "  set lineNum $lineNum1" "}" "" "if {[file isfile $fileName]} {" "        if {[regexp (.tcl)\$ $fileName]} {srcCreateSourceTab -win $_nTrace1}" "        viaLogViewerOpenFileHyperlink -fileName \"$fileName\" -lin\
+eNum \"$lineNum\" -linkLineNum \"$vgifActionLineNum\" -window \"$vgifActionWindow\"" "        verdiSetStatusMsg -win Verdi_1 \" \"" "}  else {" "     verdiSetStatusMsg -win Verdi_1 \"File is not found\"" "}"
+[ruleSet.rule2.pattern0]
+varNum = 1
+pattern = "'(.*.tcl)'"
+[ruleSet.rule2.pattern0.var0]
+varName = "fileName"
+subPatternNum = 1
+[ruleSet.rule2.pattern1]
+varNum = 1
+pattern = "stopped at line (\d+)"
+[ruleSet.rule2.pattern1.var0]
+varName = "lineNum1"
+subPatternNum = 1
+[ruleSet.rule3]
+patternNum = 1
+ruleName = "File Reference"
+action = "set lineNum 1" "if {$lineNum1  != \"\"} {" "  set lineNum $lineNum1" "} elseif {$lineNum2 != \"\"} {" "  set lineNum $lineNum2" "} elseif {$lineNum3 != \"\"} {" "  set lineNum $lineNum3" "} elseif {$lineNum4 != \"\"} {" "  set lineNum $lineNum4" "}" "" "s\
+et isUpf [regexp (.upf)\$ $smlFileName]" "" "if {[file isfile $smlFileName]} {" "    if {$isUpf} {" "        opVerdiComponents -xmlstr           \"<Command  name=\\"pdmlDebugVCStatic\\"><Object file=\\"$smlFileName\\" line=\\"$lineNum\\" /></Command>\"" " \
+   } else {" "         if {[regexp (.tcl)\$ $smlFileName]} {srcCreateSourceTab -win $_nTrace1}" "        viaLogViewerOpenFileHyperlink -fileName \"$smlFileName\" -lineNum \"$lineNum\" -linkLineNum \"$vgifActionLineNum\" -window \"$vgifActionWindow\"" "    \
+    verdiSetStatusMsg -win Verdi_1 \" \"" "    }" "}  else {" "     verdiSetStatusMsg -win Verdi_1 \"File is not found\"" "}"
+[ruleSet.rule3.pattern0]
+varNum = 7
+pattern = "(^#.*$)|([/a-zA-Z0-9_\$:]+.v?db)|(\$[a-zA-Z0-9_\$/\{\}]*.[a-zA-Z0-9])|(\"?((~([a-zA-Z0-9_.-]+)?/|\.\.\./)?(\.{0,2}/{0,2})*([a-zA-Z0-9_.-]+/{0,2})*([a-zA-Z0-9_\-:\+]+\.[a-zA-Z][a-zA-Z0-9]*|Makefile)(?!/))\"?(, ?(\d+)\b|\((\d+)\)| ?: ?p?(\d+)\b|, ?[Ll]ine:?\
+ (\d+)\.?\b)?)"
+[ruleSet.rule3.pattern0.var0]
+varName = "lineNum4"
+subPatternNum = 15
+[ruleSet.rule3.pattern0.var1]
+varName = "lineNum3"
+subPatternNum = 14
+[ruleSet.rule3.pattern0.var2]
+varName = "lineNum2"
+subPatternNum = 13
+[ruleSet.rule3.pattern0.var3]
+varName = "lineNum1"
+subPatternNum = 12
+[ruleSet.rule3.pattern0.var4]
+varName = "lineRef"
+subPatternNum = 11
+[ruleSet.rule3.pattern0.var5]
+varName = "smlFileName"
+subPatternNum = 5
+[ruleSet.rule3.pattern0.var6]
+varName = "fileRef"
+subPatternNum = 4
+[ruleSet.rule4]
+patternNum = 1
+ruleName = "Hier Ref"
+action = "::vcst::probeHierRef \"$hierName\""
+[ruleSet.rule4.pattern0]
+varNum = 1
+pattern = "(^#.*$)|(((\\[!-~]+[ \t\n\r]{1,1})|([a-zA-Z_][a-zA-Z0-9_\$]*))(\.((\\[!-~]+[ \t\n\r]{1,1})|([a-zA-Z_][a-zA-Z0-9_\$]*))([\[\(]\d+(\:\d+)?[\]\)])?){2,})"
+[ruleSet.rule4.pattern0.var0]
+varName = "hierName"
+subPatternNum = 2
+[ruleSet.rule5]
+patternNum = 1
+ruleName = "expression left"
+action = "set top [set ::vcst::_top]" "set contain [regexp -nocase ^$top $hierName]" "if {$contain == 0} {" "    set hierName \"$top.$hierName\"" "}" "" "srcSetScope -win $_nTrace1 \"$hierName\" -delim \".\""
+[ruleSet.rule5.pattern0]
+varNum = 1
+pattern = "expression *: *([a-zA-Z0-9_\$\.']*) *== *([a-zA-Z0-9_\$\.']*)"
+[ruleSet.rule5.pattern0.var0]
+varName = "hierName"
+subPatternNum = 1
+[ruleSet.rule6]
+patternNum = 1
+ruleName = "expression right"
+action = "set top [set ::vcst::_top]" "set contain [regexp -nocase ^$top $hierName]" "if {$contain == 0} {" "    set hierName \"$top.$hierName\"" "}" "" "srcSetScope -win $_nTrace1 \"$hierName\" -delim \".\""
+[ruleSet.rule6.pattern0]
+varNum = 1
+pattern = "expression *: *([a-zA-Z0-9_\$\.']*) *== *([a-zA-Z][a-zA-Z0-9_\$\.']*)"
+[ruleSet.rule6.pattern0.var0]
+varName = "hierName"
+subPatternNum = 2
+[ruleSet.rule7]
+patternNum = 1
+ruleName = "File&Hier Ref"
+action = "set top [set ::vcst::_top]" "set covDut [set ::vcst::_covDut]" "set containTop [regexp -nocase ^$top $hierName]" "set containDut [regexp -nocase ^$covDut $hierName]" "if {$covDut == \"\"} {set containDut 0}" "set fullHierName \"$hierName\"" "if {$co\
+ntainTop == 0 && $containDut == 0} {" "    set fullHierName \"$top.$hierName\"" "} elseif {$containDut == 1} {" "    regsub $covDut $hierName $top fullHierName" "} " "" "set result [srcSetScope -win $_nTrace1 \"$fullHierName\" -delim \".\"]" "if {$result \
+== 1} {" "verdiRunVcstCmd action aaMonetSelectProperties -data $fullHierName -trigger -no_wait" "}" "set containSuffix [regexp (.v|.vh|.sv|.svh|.sva|.vhd|.vhdl|.vlib|.upf|.cpf|.tcl|.csv|.xml|.csh|.log|.cmd|.txt|.el)\$ $hierName]" "set isUpf [regexp (.upf)\$\
+ $hierName]" "if {$result == 0} {" "    if {[file isfile $hierName] && !$isUpf} {" "         if {[regexp (.tcl)\$ $hierName]} {srcCreateSourceTab -win $_nTrace1}" "         verdiSetStatusMsg -win Verdi_1 \" \"" "         viaLogViewerOpenFileHyperlink -file\
+Name \"$hierName\" -lineNum 1 -linkLineNum \"$vgifActionLineNum\" -window \"$vgifActionWindow\"" "    } elseif {[file isfile $hierName] && $isUpf} { " "    opVerdiComponents -xmlstr       \"<Command  name=\\"pdmlDebugVCStatic\\"><Object file=\\"$hierName\\"\
+ line=\\"1\\" /></Command>\"" "    } elseif {$containSuffix == 1} {" "        verdiSetStatusMsg -win Verdi_1 \"File is not found\"" "    }" "}"
+[ruleSet.rule7.pattern0]
+varNum = 1
+pattern = "(^#.*$)|([a-zA-Z_][a-zA-Z0-9_\$:]*.v?db)|(\$[a-zA-Z0-9_\$/\{\}]*.[a-zA-Z0-9])|(((\\[!-~]+[ \t\n\r]{1,1})|([a-zA-Z_][a-zA-Z0-9_\$:\+]*))(\.((\\[!-~]+[ \t\n\r]{1,1})|([a-zA-Z_][a-zA-Z0-9_\$]*))([\[\(]\d+(\:\d+)?[\]\)])?))"
+[ruleSet.rule7.pattern0.var0]
+varName = "hierName"
+subPatternNum = 4

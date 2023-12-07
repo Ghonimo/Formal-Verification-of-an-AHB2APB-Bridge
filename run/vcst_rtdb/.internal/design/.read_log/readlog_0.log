@@ -1,0 +1,8 @@
+BEGIN_VIOLATION
+RULE_NAME:SE
+FILE_NAME:../sva/bridge_top_sva.sv
+LINE_NUMBER:27
+VCS_SEVERITY:Error
+MESSAGE:  Following verilog source has syntax error :VCST_RET&quot;../sva/bridge_top_sva.sv&quot;, 27: token is &apos;endsequence&apos;VCST_RETendsequenceVCST_RET           ^VCST_RETSystemVerilog  keyword &apos;endsequence&apos; is not expected to be used in this VCST_RETcontext.
+END_VIOLATION
+

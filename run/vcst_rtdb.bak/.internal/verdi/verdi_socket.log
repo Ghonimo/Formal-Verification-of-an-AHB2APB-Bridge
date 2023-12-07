@@ -1,0 +1,45 @@
+>>>verdiVcstResizeTopWin
+<<< Success : 
+>>>verdiDockWidgetSetCurTab -dock windowDock_vcstConsole_2
+<<< Success : 1
+>>>::vcst::creatInstAction
+<<< Success : 
+>>>::vcst::createAnalyzerAction
+<<< Success : 
+>>>::vcst::creatResetLayoutAction
+<<< Success : 
+>>>::vcst::creatAssertAnalyzerAction
+<<< Success : 
+>>>set ::vcst::EnableUDWin 0
+<<< Success : 0
+>>>qwConfig -type nWave -cmds [list {qwAddToolBarGroup -group "UDWinGroup"} {qwAddToolBarGroup -group "AssertAnalyzer"}]
+<<< Success : 
+>>>srcSetOptions -lockActView on
+<<< Success : 1
+>>>::vcst::createAddTraceToWaveAction
+<<< Success : 
+>>>source /pkgs/synopsys/current/vc_static/auxx/monet/tcl/menu.tcl
+
+<<< Success : 1
+>>>verdiWindowPrependTitle -win $_nTrace1 -preTitle {}
+<<< Success : 0
+>>>set ::vcst::_compositeTrace {1}
+<<< Success : 1
+>>>verdiVcstSyncMsgColor -errorColor "default_red" -warningColor "default_none" -infoColor "default_none"
+>>>@@@Event: vcstMsgColorChange(warningColor magenta true)
+>>>@@@Event: vcstMsgColorChange(infoColor black true)
+<<< Success : 
+>>>verdiSetRCValue -section appSetting -key font -value {Bitstream Vera Sans(11)};
+<<< Success : 
+>>>verdiSetPrefEnv -monoFontSize "11"
+<<< Success : 1
+>>>setStyleFvProgress -css {font-family:Bitstream Vera Sans monospace;font-size:11px}
+<<< Success : 0
+>>>setStyleFvGoalProgress -css {font-family:Bitstream Vera Sans monospace;font-size:11px}
+<<< Success : 1
+>>>verdiSetFont -font "Bitstream Vera Sans" -size "11"
+<<< Success : 1
+>>>verdiVcstOnPropSelectionChanged -strNum 0 -propList {}
+<<< Success : 
+>>>verdiDockWidgetSetCurTab -dock widgetDock_VCF:GoalList
+<<< Success : 1

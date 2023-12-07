@@ -4,9 +4,7 @@ set_fml_appmode FPV
 set design Bridge_Top
 
 set_fml_var fml_aep_unique_name true
-read_file -top $design -format sverilog -sva \
--aep all -vcs {-f ../RTL/filelist +define+INLINE_SVA \
-   ../sva/bridge_top_sva.sv}
+read_file -top $design -format sverilog -sva -aep all -vcs {-f ../RTL/filelist +define+INLINE_SVA ../sva/bridge_top_sva.sv}
 #read_waiver_file -elfiles aep.el
 
 # Creating clock and reset signals
@@ -37,7 +35,5 @@ fvassume -expr {@(posedge Hclk) disable iff(!Hresetn) (Hreadyin ##1 Hreadyin |=>
 
 # For Read transaction HREADYIN shouldn't be high sencond until HREADYOUT of 1st read is high (added for Hreadyout_penable_read)
 fvassume -expr {@(posedge Hclk) disable iff(!Hresetn) (Hreadyin && !Hwrite |=> (!Hreadyin until Hreadyout))}  
-
-
 
 

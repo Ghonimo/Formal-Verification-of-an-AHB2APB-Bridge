@@ -1,4 +1,3 @@
-
 # Select AEP as the VC Formal App mode
 set_fml_appmode FPV
 set design Bridge_Top
@@ -35,5 +34,3 @@ fvassume -expr {@(posedge Hclk) disable iff(!Hresetn) (Hreadyin ##1 Hreadyin |=>
 
 # For Read transaction HREADYIN shouldn't be high sencond until HREADYOUT of 1st read is high (added for Hreadyout_penable_read)
 fvassume -expr {@(posedge Hclk) disable iff(!Hresetn) (Hreadyin && !Hwrite |=> (!Hreadyin until Hreadyout))}  
-
-

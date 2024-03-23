@@ -1,3 +1,0 @@
-Command Line: /pkgs/synopsys/current/vc_static/verdi/platform/LINUXAMD64/bin/Novas -vcst -vcstOpts {-demo -file fpv_run_bridge.tcl -prompt vcf -mode64 -fmode _default -new_verdi_comm} -lca
-uname(Linux mo.ece.pdx.edu 3.10.0-1160.99.1.el7.x86_64 #1 SMP Wed Sep 13 14:19:20 UTC 2023 x86_64)
-au time 189.532106 12.697350 5.169494 delta 282439680 282439680 total 871657472 871657472

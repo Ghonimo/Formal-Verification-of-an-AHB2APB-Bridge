@@ -1,9 +1,0 @@
-verdiSetActWin -dock widgetDock_<Decl._Tree>
-verdiWindowWorkMode -win $_Verdi_1 -formalVerification
-verdiDockWidgetDisplay -dock windowDock_vcstConsole_2
-srcSetPreference -vcstOpts {-demo -prompt vcf -fmode _default -new_verdi_comm}
-verdiWindowResize -win $_Verdi_1 "50" "0" "1250" "800"
-verdiWindowResize -win $_Verdi_1 "214" "169" "1250" "800"
-verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
-verdiWindowResize -win $_Verdi_1 "214" "169" "1252" "802"
-debExit
